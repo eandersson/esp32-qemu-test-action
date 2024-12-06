@@ -11,8 +11,6 @@ RUN apt-get update \
   libpixman-1-0 \
   ruby
 
-RUN ./opt/esp/entrypoint.sh && pip install --no-cache-dir idf-component-manager
-
 # QEMU
 ENV QEMU_REL=esp-develop-9.0.0-20240606
 ENV QEMU_DIST=qemu-esp_develop_9.0.0_20240606-src.tar.xz
