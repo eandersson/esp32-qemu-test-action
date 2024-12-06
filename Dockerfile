@@ -20,7 +20,7 @@ ENV QEMU_URL=https://github.com/espressif/qemu/releases/download/${QEMU_REL}/${Q
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
-# ENV IDF_PYTHON_ENV_PATH=/opt/esp/python_env/idf4.4_py3.8_env
+ENV IDF_PYTHON_ENV_PATH=/opt/esp/python_env/idf5.3_py3.10_env
 
 RUN wget --no-verbose ${QEMU_URL} \
   && tar -xf $QEMU_DIST -C /opt \
