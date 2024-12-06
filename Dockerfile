@@ -2,15 +2,6 @@ FROM espressif/idf:v5.3.2
 
 ARG DEBIAN_FRONTEND=nointeractive
 
-RUN apt-get update \
-  && apt install -y -q \
-  cmake \
-  git \
-  libglib2.0-0 \
-  libnuma1 \
-  libpixman-1-0 \
-  ruby
-
 # QEMU
 ENV QEMU_REL=esp-develop-9.0.0-20240606
 ENV QEMU_DIST=qemu-esp_develop_9.0.0_20240606-src.tar.xz
